@@ -1,3 +1,98 @@
-body {
-    background-color: lightblue;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --backgound-color: #F7FBF7;
+    --font-color: #0C170D;
+    --primary-color: #63AF6A;
+    --secondary-color: #9fcec3;
+    --accent-color: #86c1be;
+    --font-style: "Inter";
+}
+
+@media (max-width: 600px) {
+    body {
+    background-color: var(--backgound-color);
+    color: var(--font-color);
+    font-family: var(--font-style);
+}
+
+a {
+    text-decoration: none;
+}
+    
+    /* Navbar */
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 30px;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+
+    .call-to-action {
+        display: none;
+    }
+
+    .burger-btn {
+        background: none;
+        border: none;
+        
+    }
+
+    /* Hero */
+
+    h1 {
+        text-align: center;
+        letter-spacing: -1px;
+        line-height: 40px;
+        margin: 35px;
+    }
+
+    .gradient {
+        background: linear-gradient(90deg, var(--primary-color), var(--accent-color), var(--secondary-color));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .sub-heading {
+        text-align: center;
+        max-width: 320px;
+        margin: 35px auto;
+        line-height: 30px;
+        letter-spacing: 0.5px;
+    }
+
+    .hero-cta {
+        display: block;
+        text-align: center;
+        font-size: 22px;
+        margin: 25px auto;
+        border-radius: 10px;
+        border: none;
+        letter-spacing: -1.7%;
+
+    }
+
+    .cta1 {
+        background-color: var(--primary-color);
+        padding: 15px 13px;
+        font-weight: 500;
+    }
+
+    .cta2 {
+        background-color: var(--secondary-color);
+        padding: 8px 22px;
+    }
+
+    .hero-image {
+        display: block;
+        margin: 35px auto;
+    }
 }
