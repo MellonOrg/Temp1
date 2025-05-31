@@ -15,16 +15,25 @@
 
 @media (max-width: 600px) {
     body {
-    background-color: var(--backgound-color);
-    color: var(--font-color);
-    font-family: var(--font-style);
-}
+        background-color: var(--backgound-color);
+        color: var(--font-color);
+        font-family: var(--font-style);
+    }
 
-a {
-    text-decoration: none;
-}
-    
+    p {
+        font-size: 18px;
+
+    }
+
+    a {
+        text-decoration: none;
+    }
+        
     /* Navbar */
+
+    .section {
+        margin-bottom: 180px;
+    }
 
     header {
         display: flex;
@@ -95,4 +104,39 @@ a {
         display: block;
         margin: 35px auto;
     }
+
+    /* Services */
+
+    .services > h2 {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .service-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 30px;
+        background-color: color-mix(in srgb, var(--primary-color) 10%, transparent);margin: 25px;    
+        padding: 40px;
+        border-radius: 16px;
+    }
+
+    .service-title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .underline {
+        background-color: var(--secondary-color);
+        width: inherit;
+        height: 10px;
+        margin-top: -10px;
+    }
+
+    .service-description {
+        max-width: 230px;   
+    }
+
 }
